@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpacePot8tosEditorScripts", "SpacePot8tosEditorScripts\SpacePot8tosEditorScripts.csproj", "{49CDCF6E-A7B6-445A-89FD-92047B1F28C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49CDCF6E-A7B6-445A-89FD-92047B1F28C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49CDCF6E-A7B6-445A-89FD-92047B1F28C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49CDCF6E-A7B6-445A-89FD-92047B1F28C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49CDCF6E-A7B6-445A-89FD-92047B1F28C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {94E496BD-B841-4A87-B8E1-41CDA5F20DE7}
+	EndGlobalSection
+EndGlobal
