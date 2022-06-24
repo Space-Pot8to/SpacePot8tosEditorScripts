@@ -1,9 +1,6 @@
-12
-mesh empire_garden_wall_a1
-mesh rock_004
-prefab PathPlacerScript
-prefab empire_garden_wall_a1
-prefab fence_old_c3
+9
+prefab MaterialReplacerScript
+prefab aserai_castle_baracks_a_l2
 texture cg_50c_5b
 texture editor_grid_8
 texture editor_grid_8_s

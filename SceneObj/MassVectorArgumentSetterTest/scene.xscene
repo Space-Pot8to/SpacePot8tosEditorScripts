@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<scene name="PathPlacerTest" version="2">
+<scene name="MassVectorArgumentSetterTest" version="2">
 	<flora_bounding_rect min="0.000, 0.000" max="0.000, 0.000"/>
 	<levels>
 		<level name="base" mask="1"/>
@@ -42,15 +42,6 @@
 		</out_of_bounds_effects_properties>
 	</environment_properties>
 	<entities>
-		<game_entity prefab="PathPlacerScript">
-			<transform position="3.632, 8.217, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
-		</game_entity>
-		<game_entity prefab="empire_garden_wall_a1">
-			<transform position="4.429, 12.821, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
-		</game_entity>
-		<game_entity prefab="fence_old_c3">
-			<transform position="38.738, 13.516, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
-		</game_entity>
 		<game_entity name="envmap_probe" old_prefab_name="" mobility="1">
 			<visibility_masks>
 				<visibility_mask name="no_shadow" value="true"/>
@@ -69,217 +60,14 @@
 				</script>
 			</scripts>
 		</game_entity>
-		<game_entity name="parent" old_prefab_name="rock_004">
+		<game_entity prefab="aserai_castle_baracks_a_l3">
 			<tags>
-				<tag name="path_placer_parent"/>
+				<tag name="tag"/>
 			</tags>
-			<transform position="12.129, 11.923, 0.000" rotation_euler="0.000, 0.000, -0.063"/>
-			<physics shape="bo_rock_004" override_material="stone"/>
-			<components>
-				<meta_mesh_component name="rock_004"/>
-			</components>
-			<children>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform non_orthogonal_rotation_mat="-0.730162, 0.683274, 0.000000, -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind)" scale="1.000, 0.000, 0.000"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 3.340, 0.000" non_orthogonal_rotation_mat="-0.730162, 0.683274, 0.000000, -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind)" scale="1.000, 0.000, 0.000"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 6.680, 0.000" non_orthogonal_rotation_mat="-0.730162, 0.683274, 0.000000, -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind)" scale="1.000, 0.000, 0.000"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 10.020, 0.000" non_orthogonal_rotation_mat="-0.730162, 0.683274, 0.000000, -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind)" scale="1.000, 0.000, 0.000"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 13.360, 0.000" non_orthogonal_rotation_mat="-0.730162, 0.683274, 0.000000, -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind)" scale="1.000, 0.000, 0.000"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 16.700, 0.000" non_orthogonal_rotation_mat="-0.730162, 0.683274, 0.000000, -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind)" scale="1.000, 0.000, 0.000"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 20.040, 0.000" non_orthogonal_rotation_mat="-0.730162, 0.683274, 0.000000, -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind)" scale="1.000, 0.000, 0.000"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 23.380, 0.000" non_orthogonal_rotation_mat="-0.730162, 0.683274, 0.000000, -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind)" scale="1.000, 0.000, 0.000"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 26.720, 0.000" non_orthogonal_rotation_mat="-0.730162, 0.683274, 0.000000, -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind)" scale="1.000, 0.000, 0.000"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 30.060, 0.000" non_orthogonal_rotation_mat="-0.730162, 0.683274, 0.000000, -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind)" scale="1.000, 0.000, 0.000"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 33.400, 0.000" non_orthogonal_rotation_mat="-0.730162, 0.683274, 0.000000, -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind)" scale="1.000, 0.000, 0.000"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 36.740, 0.000" non_orthogonal_rotation_mat="-0.730162, 0.683274, 0.000000, -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind)" scale="1.000, 0.000, 0.000"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 40.080, 0.000" non_orthogonal_rotation_mat="-0.730162, 0.683274, 0.000000, -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind)" scale="1.000, 0.000, 0.000"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity prefab="empire_garden_wall_a1" _index_="13">
-					<transform position="0.000, 43.420, 0.000" non_orthogonal_rotation_mat="-0.730162, 0.683274, 0.000000, -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind)" scale="1.000, 0.000, 0.000"/>
-				</game_entity>
-			</children>
+			<transform position="28.481, 26.723, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
 		</game_entity>
-		<game_entity name="parent" old_prefab_name="rock_004">
-			<tags>
-				<tag name="path_placer_parent"/>
-			</tags>
-			<transform position="12.129, 11.923, 0.000" rotation_euler="0.000, 0.000, -0.063"/>
-			<physics shape="bo_rock_004" override_material="stone"/>
-			<components>
-				<meta_mesh_component name="rock_004"/>
-			</components>
-			<children>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform rotation_euler="0.000, 0.000, 1.571"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 3.340, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 6.680, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 10.020, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 13.360, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 16.700, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 20.040, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 23.380, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 26.720, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 30.060, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 33.400, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 36.740, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 40.080, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity prefab="empire_garden_wall_a1" _index_="13">
-					<transform position="0.000, 43.420, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
-				</game_entity>
-			</children>
+		<game_entity prefab="MassVectorArgumentSetterScript">
+			<transform position="12.787, 10.156, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
 		</game_entity>
 	</entities>
 	<terrain enabled="true" node_dimension_x="4" node_dimension_y="4" node_size="100.000" lod_multiplier="1.000" min_height="-100.000" max_height="500.000" vista_normalmap="" vista_diffuse_name="" vista_diffuse_blend_type="0" vista_diffuse_blend_amount="0.000" vista_layer_detail_distance="35.000" vista_albedo_multiplier="0.670" vista_detail_albedo_name="" vista_detail_normal_name="" vista_detail_tile="20.000" vista_tileset="" colormap_detail_level="0" ao_intensity="4.000">
@@ -296,18 +84,18 @@
 			<variable name="horizon_mesh_diffuse_3_multiplier" value="1.000"/>
 			<variable name="horizon_mesh_areamap_tile_multiplier" value="1.000"/>
 			<variable name="horizon_mesh_areamap_power" value="1.000"/>
-			<variable name="horizon_mesh_height" value="1.000"/>
+			<variable name="horizon_mesh_height" value="1234746624.000"/>
 		</outer_mesh>
 		<layers version="1">
 			<layer name="default">
 				<summer is_enabled="true" name="default" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="5.000, 5.000" shear="0.000, 0.000" position_offset="0.000, 0.000" physics_material="soil" detail_level_adjustment="0" elevation_amount="0.000" parallax_amount="0.000" ground_slope_scale="1.000" bigdetailmap_mode="0" bigdetailmap_weight="0.000" albedo_factor_color="1.000, 1.000, 1.000" albedo_factor_mode="0" smooth_blend_amount="1.000" bigdetailmap_scale_x="0.080" bigdetailmap_scale_y="0.080" bigdetailmap_bias_x="0.080" bigdetailmap_bias_y="0.080">
 					<textures>
-						<texture type="diffusemap" name="editor_grid_8"/>
+						<texture type="diffusemap" name="cliff_soil_d"/>
 						<texture type="areamap" name="none"/>
-						<texture type="normalmap" name="none"/>
-						<texture type="specularmap" name="editor_grid_8_s"/>
+						<texture type="normalmap" name="cliff_soil_n"/>
+						<texture type="specularmap" name="cliff_soil_s"/>
 						<texture type="splattingmap" name="none"/>
-						<texture type="displacementmap" name="none"/>
+						<texture type="displacementmap" name="cliff_soil_h"/>
 					</textures>
 					<layer_flags>
 						<flag name="use_parallax" value="false"/>
@@ -330,16 +118,47 @@
 					<meshes/>
 				</spring>
 			</layer>
+			<layer name="mud">
+				<summer is_enabled="true" name="mud" is_flora_layer="false" is_mesh_blend_layer="true" pitch_roll_yaw="0.000, 0.000, 0.000" scale="5.000, 5.000" shear="0.000, 0.000" position_offset="0.000, 0.000" physics_material="soil" detail_level_adjustment="0" elevation_amount="0.000" parallax_amount="0.000" ground_slope_scale="1.000" bigdetailmap_mode="0" bigdetailmap_weight="0.000" albedo_factor_color="1.000, 1.000, 1.000" albedo_factor_mode="0" smooth_blend_amount="1.000" bigdetailmap_scale_x="0.080" bigdetailmap_scale_y="0.080" bigdetailmap_bias_x="0.080" bigdetailmap_bias_y="0.080">
+					<textures>
+						<texture type="diffusemap" name="ground_mud_c_d"/>
+						<texture type="areamap" name="none"/>
+						<texture type="normalmap" name="ground_mud_c_n"/>
+						<texture type="specularmap" name="ground_mud_c_s"/>
+						<texture type="splattingmap" name="none"/>
+						<texture type="displacementmap" name="ground_mud_c_h"/>
+					</textures>
+					<layer_flags>
+						<flag name="use_parallax" value="false"/>
+						<flag name="use_displacement_mapping" value="false"/>
+						<flag name="use_randomized_normalmap" value="false"/>
+						<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+						<flag name="use_transparency_of_ground_slope" value="false"/>
+						<flag name="use_dxt5_normal" value="false"/>
+						<flag name="use_six_side_uv_mapping" value="false"/>
+					</layer_flags>
+					<meshes/>
+				</summer>
+				<fall is_enabled="true" name="mud" is_flora_layer="false" is_mesh_blend_layer="false">
+					<meshes/>
+				</fall>
+				<winter is_enabled="true" name="mud" is_flora_layer="false" is_mesh_blend_layer="false">
+					<meshes/>
+				</winter>
+				<spring is_enabled="true" name="mud" is_flora_layer="false" is_mesh_blend_layer="false">
+					<meshes/>
+				</spring>
+			</layer>
 		</layers>
 		<nodes>
-			<node idx="0" idy="0" occluders_enabled="true" layer_is_used_mask_summer="1" layer_is_used_mask_fall="1" layer_is_used_mask_winter="1" layer_is_used_mask_spring="1" layer_is_used_mask="true" height_complexity="0.000" min_height="0.000" max_height="0.000">
+			<node idx="0" idy="0" occluders_enabled="true" layer_is_used_mask_summer="3" layer_is_used_mask_fall="3" layer_is_used_mask_winter="3" layer_is_used_mask_spring="3" layer_is_used_mask="true" height_complexity="0.000" min_height="0.000" max_height="0.000">
 				<texture_levels>
 					<variable name="heightmap_level" value="6"/>
 					<variable name="min_heightmap_level" value="2"/>
 					<variable name="normalmap_level" value="6"/>
 					<variable name="weightmap_levels">
 						<variable layer="0" value="6"/>
-						<variable layer="1" value="0"/>
+						<variable layer="1" value="6"/>
 						<variable layer="2" value="0"/>
 						<variable layer="3" value="0"/>
 						<variable layer="4" value="0"/>
@@ -364,7 +183,7 @@
 					<variable name="normalmap_level" value="6"/>
 					<variable name="weightmap_levels">
 						<variable layer="0" value="6"/>
-						<variable layer="1" value="0"/>
+						<variable layer="1" value="6"/>
 						<variable layer="2" value="0"/>
 						<variable layer="3" value="0"/>
 						<variable layer="4" value="0"/>
@@ -389,7 +208,7 @@
 					<variable name="normalmap_level" value="6"/>
 					<variable name="weightmap_levels">
 						<variable layer="0" value="6"/>
-						<variable layer="1" value="0"/>
+						<variable layer="1" value="6"/>
 						<variable layer="2" value="0"/>
 						<variable layer="3" value="0"/>
 						<variable layer="4" value="0"/>
@@ -414,7 +233,7 @@
 					<variable name="normalmap_level" value="6"/>
 					<variable name="weightmap_levels">
 						<variable layer="0" value="6"/>
-						<variable layer="1" value="0"/>
+						<variable layer="1" value="6"/>
 						<variable layer="2" value="0"/>
 						<variable layer="3" value="0"/>
 						<variable layer="4" value="0"/>
@@ -439,7 +258,7 @@
 					<variable name="normalmap_level" value="6"/>
 					<variable name="weightmap_levels">
 						<variable layer="0" value="6"/>
-						<variable layer="1" value="0"/>
+						<variable layer="1" value="6"/>
 						<variable layer="2" value="0"/>
 						<variable layer="3" value="0"/>
 						<variable layer="4" value="0"/>
@@ -464,7 +283,7 @@
 					<variable name="normalmap_level" value="6"/>
 					<variable name="weightmap_levels">
 						<variable layer="0" value="6"/>
-						<variable layer="1" value="0"/>
+						<variable layer="1" value="6"/>
 						<variable layer="2" value="0"/>
 						<variable layer="3" value="0"/>
 						<variable layer="4" value="0"/>
@@ -489,7 +308,7 @@
 					<variable name="normalmap_level" value="6"/>
 					<variable name="weightmap_levels">
 						<variable layer="0" value="6"/>
-						<variable layer="1" value="0"/>
+						<variable layer="1" value="6"/>
 						<variable layer="2" value="0"/>
 						<variable layer="3" value="0"/>
 						<variable layer="4" value="0"/>
@@ -514,7 +333,7 @@
 					<variable name="normalmap_level" value="6"/>
 					<variable name="weightmap_levels">
 						<variable layer="0" value="6"/>
-						<variable layer="1" value="0"/>
+						<variable layer="1" value="6"/>
 						<variable layer="2" value="0"/>
 						<variable layer="3" value="0"/>
 						<variable layer="4" value="0"/>
@@ -539,7 +358,7 @@
 					<variable name="normalmap_level" value="6"/>
 					<variable name="weightmap_levels">
 						<variable layer="0" value="6"/>
-						<variable layer="1" value="0"/>
+						<variable layer="1" value="6"/>
 						<variable layer="2" value="0"/>
 						<variable layer="3" value="0"/>
 						<variable layer="4" value="0"/>
@@ -564,7 +383,7 @@
 					<variable name="normalmap_level" value="6"/>
 					<variable name="weightmap_levels">
 						<variable layer="0" value="6"/>
-						<variable layer="1" value="0"/>
+						<variable layer="1" value="6"/>
 						<variable layer="2" value="0"/>
 						<variable layer="3" value="0"/>
 						<variable layer="4" value="0"/>
@@ -589,7 +408,7 @@
 					<variable name="normalmap_level" value="6"/>
 					<variable name="weightmap_levels">
 						<variable layer="0" value="6"/>
-						<variable layer="1" value="0"/>
+						<variable layer="1" value="6"/>
 						<variable layer="2" value="0"/>
 						<variable layer="3" value="0"/>
 						<variable layer="4" value="0"/>
@@ -614,7 +433,7 @@
 					<variable name="normalmap_level" value="6"/>
 					<variable name="weightmap_levels">
 						<variable layer="0" value="6"/>
-						<variable layer="1" value="0"/>
+						<variable layer="1" value="6"/>
 						<variable layer="2" value="0"/>
 						<variable layer="3" value="0"/>
 						<variable layer="4" value="0"/>
@@ -639,7 +458,7 @@
 					<variable name="normalmap_level" value="6"/>
 					<variable name="weightmap_levels">
 						<variable layer="0" value="6"/>
-						<variable layer="1" value="0"/>
+						<variable layer="1" value="6"/>
 						<variable layer="2" value="0"/>
 						<variable layer="3" value="0"/>
 						<variable layer="4" value="0"/>
@@ -664,7 +483,7 @@
 					<variable name="normalmap_level" value="6"/>
 					<variable name="weightmap_levels">
 						<variable layer="0" value="6"/>
-						<variable layer="1" value="0"/>
+						<variable layer="1" value="6"/>
 						<variable layer="2" value="0"/>
 						<variable layer="3" value="0"/>
 						<variable layer="4" value="0"/>
@@ -689,7 +508,7 @@
 					<variable name="normalmap_level" value="6"/>
 					<variable name="weightmap_levels">
 						<variable layer="0" value="6"/>
-						<variable layer="1" value="0"/>
+						<variable layer="1" value="6"/>
 						<variable layer="2" value="0"/>
 						<variable layer="3" value="0"/>
 						<variable layer="4" value="0"/>
@@ -714,7 +533,7 @@
 					<variable name="normalmap_level" value="6"/>
 					<variable name="weightmap_levels">
 						<variable layer="0" value="6"/>
-						<variable layer="1" value="0"/>
+						<variable layer="1" value="6"/>
 						<variable layer="2" value="0"/>
 						<variable layer="3" value="0"/>
 						<variable layer="4" value="0"/>
@@ -734,22 +553,8 @@
 			</node>
 		</nodes>
 	</terrain>
-	<editor_data editor_camera_position="4.756, 0.482, 7.275" editor_camera_elevation="-0.255" editor_camera_bearing="-2.997" editor_camera_forward="0.085, 0.854, -0.514" author="" comment=""/>
+	<editor_data editor_camera_position="8.767, 0.965, 7.973" editor_camera_elevation="-0.221" editor_camera_bearing="-2.726" editor_camera_forward="0.344, 0.833, -0.433" author="" comment=""/>
 	<camera_data near_plane="0.100" far_plane="100000.000"/>
-	<Paths>
-		<path name="path" interpolation_type="linear" scene_upgrade_level_mask_="4294967295" season_mask_="255">
-			<flags/>
-			<points>
-				<point position="12.129, 11.923, 0.000" scale="1.000, 1.000, 1.000" color="1.000, 1.000, 1.000, 1.000" rotation="0.00000, 0.00000, 0.00000, 1.00000">
-					<first_tangent position="13.129, 11.923, 0.000"/>
-					<second_tangent position="11.129, 11.923, 0.000"/>
-				</point>
-				<point position="14.904, 56.077, 0.000" scale="1.000, 1.000, 1.000" color="1.000, 1.000, 1.000, 1.000" rotation="0.00000, 0.00000, 0.00000, 1.00000">
-					<first_tangent position="18.807, 55.804, 18.172"/>
-					<second_tangent position="11.001, 56.350, -18.172"/>
-				</point>
-			</points>
-		</path>
-	</Paths>
+	<Paths/>
 </scene>
 

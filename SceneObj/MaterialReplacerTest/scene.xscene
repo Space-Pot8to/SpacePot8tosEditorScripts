@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<scene name="PathPlacerTest" version="2">
+<scene name="MaterialReplacerTest" version="2">
 	<flora_bounding_rect min="0.000, 0.000" max="0.000, 0.000"/>
 	<levels>
 		<level name="base" mask="1"/>
@@ -42,15 +42,6 @@
 		</out_of_bounds_effects_properties>
 	</environment_properties>
 	<entities>
-		<game_entity prefab="PathPlacerScript">
-			<transform position="3.632, 8.217, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
-		</game_entity>
-		<game_entity prefab="empire_garden_wall_a1">
-			<transform position="4.429, 12.821, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
-		</game_entity>
-		<game_entity prefab="fence_old_c3">
-			<transform position="38.738, 13.516, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
-		</game_entity>
 		<game_entity name="envmap_probe" old_prefab_name="" mobility="1">
 			<visibility_masks>
 				<visibility_mask name="no_shadow" value="true"/>
@@ -69,215 +60,49 @@
 				</script>
 			</scripts>
 		</game_entity>
-		<game_entity name="parent" old_prefab_name="rock_004">
-			<tags>
-				<tag name="path_placer_parent"/>
-			</tags>
-			<transform position="12.129, 11.923, 0.000" rotation_euler="0.000, 0.000, -0.063"/>
-			<physics shape="bo_rock_004" override_material="stone"/>
-			<components>
-				<meta_mesh_component name="rock_004"/>
-			</components>
-			<children>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform non_orthogonal_rotation_mat="-0.730162, 0.683274, 0.000000, -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind)" scale="1.000, 0.000, 0.000"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 3.340, 0.000" non_orthogonal_rotation_mat="-0.730162, 0.683274, 0.000000, -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind)" scale="1.000, 0.000, 0.000"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 6.680, 0.000" non_orthogonal_rotation_mat="-0.730162, 0.683274, 0.000000, -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind)" scale="1.000, 0.000, 0.000"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 10.020, 0.000" non_orthogonal_rotation_mat="-0.730162, 0.683274, 0.000000, -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind)" scale="1.000, 0.000, 0.000"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 13.360, 0.000" non_orthogonal_rotation_mat="-0.730162, 0.683274, 0.000000, -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind)" scale="1.000, 0.000, 0.000"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 16.700, 0.000" non_orthogonal_rotation_mat="-0.730162, 0.683274, 0.000000, -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind)" scale="1.000, 0.000, 0.000"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 20.040, 0.000" non_orthogonal_rotation_mat="-0.730162, 0.683274, 0.000000, -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind)" scale="1.000, 0.000, 0.000"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 23.380, 0.000" non_orthogonal_rotation_mat="-0.730162, 0.683274, 0.000000, -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind)" scale="1.000, 0.000, 0.000"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 26.720, 0.000" non_orthogonal_rotation_mat="-0.730162, 0.683274, 0.000000, -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind)" scale="1.000, 0.000, 0.000"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 30.060, 0.000" non_orthogonal_rotation_mat="-0.730162, 0.683274, 0.000000, -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind)" scale="1.000, 0.000, 0.000"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 33.400, 0.000" non_orthogonal_rotation_mat="-0.730162, 0.683274, 0.000000, -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind)" scale="1.000, 0.000, 0.000"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 36.740, 0.000" non_orthogonal_rotation_mat="-0.730162, 0.683274, 0.000000, -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind)" scale="1.000, 0.000, 0.000"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 40.080, 0.000" non_orthogonal_rotation_mat="-0.730162, 0.683274, 0.000000, -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind)" scale="1.000, 0.000, 0.000"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity prefab="empire_garden_wall_a1" _index_="13">
-					<transform position="0.000, 43.420, 0.000" non_orthogonal_rotation_mat="-0.730162, 0.683274, 0.000000, -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind), -nan(ind)" scale="1.000, 0.000, 0.000"/>
-				</game_entity>
-			</children>
+		<game_entity prefab="MaterialReplacerScript">
+			<transform position="7.992, 7.052, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+			<scripts>
+				<script name="MaterialReplacer">
+					<variables>
+						<variable name="targetMaterial" value="stone_wall_14"/>
+						<variable name="replacementMaterial" value="stone_wall_desert_b"/>
+						<variable name="tag" value=""/>
+						<variable name="showTargetEntities" value="true"/>
+					</variables>
+				</script>
+			</scripts>
 		</game_entity>
-		<game_entity name="parent" old_prefab_name="rock_004">
+		<game_entity prefab="aserai_castle_baracks_a_l2">
 			<tags>
-				<tag name="path_placer_parent"/>
+				<tag name="target"/>
 			</tags>
-			<transform position="12.129, 11.923, 0.000" rotation_euler="0.000, 0.000, -0.063"/>
-			<physics shape="bo_rock_004" override_material="stone"/>
+			<transform position="50.824, 17.864, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
 			<components>
-				<meta_mesh_component name="rock_004"/>
+				<meta_mesh_component>
+					<mesh name="aserai_castle_baracks_a_l2.lod6.0" material="stone_wall_desert_b"/>
+					<mesh name="aserai_castle_baracks_a_l2.lod5.0" material="stone_wall_desert_b"/>
+					<mesh name="aserai_castle_baracks_a_l2.lod4.0" material="stone_wall_desert_b"/>
+					<mesh name="aserai_castle_baracks_a_l2.0" material="stone_wall_desert_b"/>
+				</meta_mesh_component>
 			</components>
+		</game_entity>
+		<game_entity name="target_parent" old_prefab_name="">
+			<tags>
+				<tag name="target"/>
+			</tags>
+			<transform position="20.240, 16.117, 4.675" rotation_euler="0.000, 0.000, 0.000"/>
 			<children>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform rotation_euler="0.000, 0.000, 1.571"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
+				<game_entity prefab="aserai_castle_baracks_a_l2" _index_="0">
+					<transform position="1.867, 1.258, -4.675"/>
 					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
+						<meta_mesh_component>
+							<mesh name="aserai_castle_baracks_a_l2.lod6.0" material="stone_wall_desert_b"/>
+							<mesh name="aserai_castle_baracks_a_l2.lod5.0" material="stone_wall_desert_b"/>
+							<mesh name="aserai_castle_baracks_a_l2.lod4.0" material="stone_wall_desert_b"/>
+							<mesh name="aserai_castle_baracks_a_l2.0" material="stone_wall_desert_b"/>
+						</meta_mesh_component>
 					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 3.340, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 6.680, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 10.020, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 13.360, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 16.700, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 20.040, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 23.380, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 26.720, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 30.060, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 33.400, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 36.740, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity name="empire_garden_wall_a1" old_prefab_name="empire_garden_wall_a1" occlusion_body_name="bo_occ_empire_garden_wall_a1">
-					<transform position="0.000, 40.080, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
-					<physics shape="bo_empire_garden_wall_a1" override_material="stone"/>
-					<components>
-						<meta_mesh_component name="empire_garden_wall_a1"/>
-					</components>
-				</game_entity>
-				<game_entity prefab="empire_garden_wall_a1" _index_="13">
-					<transform position="0.000, 43.420, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
 				</game_entity>
 			</children>
 		</game_entity>
@@ -734,22 +559,8 @@
 			</node>
 		</nodes>
 	</terrain>
-	<editor_data editor_camera_position="4.756, 0.482, 7.275" editor_camera_elevation="-0.255" editor_camera_bearing="-2.997" editor_camera_forward="0.085, 0.854, -0.514" author="" comment=""/>
+	<editor_data editor_camera_position="5.266, -4.364, 13.282" editor_camera_elevation="-0.155" editor_camera_bearing="-0.837" editor_camera_forward="0.533, 0.652, -0.539" author="" comment=""/>
 	<camera_data near_plane="0.100" far_plane="100000.000"/>
-	<Paths>
-		<path name="path" interpolation_type="linear" scene_upgrade_level_mask_="4294967295" season_mask_="255">
-			<flags/>
-			<points>
-				<point position="12.129, 11.923, 0.000" scale="1.000, 1.000, 1.000" color="1.000, 1.000, 1.000, 1.000" rotation="0.00000, 0.00000, 0.00000, 1.00000">
-					<first_tangent position="13.129, 11.923, 0.000"/>
-					<second_tangent position="11.129, 11.923, 0.000"/>
-				</point>
-				<point position="14.904, 56.077, 0.000" scale="1.000, 1.000, 1.000" color="1.000, 1.000, 1.000, 1.000" rotation="0.00000, 0.00000, 0.00000, 1.00000">
-					<first_tangent position="18.807, 55.804, 18.172"/>
-					<second_tangent position="11.001, 56.350, -18.172"/>
-				</point>
-			</points>
-		</path>
-	</Paths>
+	<Paths/>
 </scene>
 

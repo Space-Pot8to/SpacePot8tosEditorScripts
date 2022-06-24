@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\bin\Win64_Shipping_wEditor\</OutputPath>
+    <OutputPath>..\..\bin\Win64_Shipping_wEditor\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -246,6 +246,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
+    <Compile Include="MassVectorArgumentSetter.cs" />
+    <Compile Include="MaterialReplacer.cs" />
     <Compile Include="PathPlacer.cs" />
     <Compile Include="../Properties\AssemblyInfo.cs" />
   </ItemGroup>

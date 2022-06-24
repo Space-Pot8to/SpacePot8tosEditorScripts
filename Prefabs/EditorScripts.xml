@@ -1,0 +1,62 @@
+<prefabs>
+	<game_entity name="MaterialReplacerScript" old_prefab_name="" mobility="1">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="MaterialReplacer">
+				<variables>
+					<variable name="targetMaterial" value="stone_wall_desert_b"/>
+					<variable name="replacementMaterial" value="stone_wall_14"/>
+					<variable name="tag" value="target"/>
+					<variable name="entityName" value="aserai_castle_baracks_a_l2"/>
+					<variable name="scriptName" value=""/>
+					<variable name="searchChildren" value="false"/>
+					<variable name="showTargetEntities" value="false"/>
+				</variables>
+			</script>
+		</scripts>
+	</game_entity>
+	<game_entity name="PathPlacerScript" old_prefab_name="" mobility="1">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="PathPlacer">
+				<variables>
+					<variable name="pathName" value="path"/>
+					<variable name="prefabName" value="empire_garden_wall_a1"/>
+					<variable name="separation" value="3.340"/>
+					<variable name="snapToGround" value="false"/>
+					<variable name="alignToPath" value="true"/>
+					<variable name="rotation" value="0.000, 0.000, 0.000, 340282346638528859811704183484516925440.000"/>
+					<variable name="scale" value="1.000, 1.000, 1.000, 340282346638528859811704183484516925440.000"/>
+					<variable name="offest" value="0.000, 0.000, 0.000, 0.000"/>
+					<variable name="parentName" value="parent"/>
+				</variables>
+			</script>
+		</scripts>
+	</game_entity>
+	<game_entity name="MassVectorArgumentSetterScript" old_prefab_name="" mobility="1">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="MassVectorArgumentSetter">
+				<variables>
+					<variable name="setVec1X" value="true"/>
+					<variable name="vec1X" value="0.000"/>
+					<variable name="setVec1Y" value="true"/>
+					<variable name="vec1Y" value="0.000"/>
+					<variable name="setVec1Z" value="true"/>
+					<variable name="vec1Z" value="0.000"/>
+					<variable name="setVec1W" value="true"/>
+					<variable name="vec1W" value="0.000"/>
+					<variable name="setVec2X" value="false"/>
+					<variable name="vec2X" value="0.000"/>
+					<variable name="setVec2Y" value="false"/>
+					<variable name="vec2Y" value="0.000"/>
+					<variable name="setVec2Z" value="false"/>
+					<variable name="vec2Z" value="0.000"/>
+					<variable name="tag" value=""/>
+					<variable name="showTargetEntities" value="false"/>
+				</variables>
+			</script>
+		</scripts>
+	</game_entity>
+</prefabs>
+

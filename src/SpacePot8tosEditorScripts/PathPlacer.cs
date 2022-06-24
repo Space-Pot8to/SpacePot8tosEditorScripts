@@ -11,12 +11,10 @@ namespace SpacePot8tosEditorScripts
         public string pathName;
         public string prefabName;
         public float separation;
-        public bool alignXRotationToGround;
-        public bool alignYRotationToGround;
-        public bool alignZrotationToGround;
+        public bool snapToGround;
         public bool alignToPath;
         public Vec3 rotation;
-        public Vec3 scale;
+        public Vec3 scale = Vec3.One;
         public Vec3 offest;
         public string parentName;
         public SimpleButton placeEntities;
@@ -32,17 +30,20 @@ namespace SpacePot8tosEditorScripts
             {
                 if (this.IsValid())
                     this.OnPlaceEntities();
+                return;
             }
 
             if (variableName == "clearCurrentParent")
             {
                 this._currentParent = null;
+                return;
             }
 
             if (CanLiveEdit())
             {
                 base.Scene.RemoveEntity(_currentParent, 0);
                 this.OnPlaceEntities();
+                return;
             }
         }
 
@@ -86,15 +87,18 @@ namespace SpacePot8tosEditorScripts
             tracker.CurrentFrameAndColor(out currentFrame, out color);
 
             MatrixFrame[] pathPoints = new MatrixFrame[2];
+            Vec3 angles = currentFrame.rotation.GetEulerAngles();
+            float zRotBias = angles.Z;
             path.GetPoints(pathPoints);
             Vec3 forward = (pathPoints[1].origin - pathPoints[0].origin).NormalizedCopy();
+            float angleOffset = forward.AsVec2.AngleBetween(Vec2.Forward);
+            currentFrame.Rotate(-angleOffset, Vec3.Up);
+            currentFrame.Rotate(-zRotBias, Vec3.Up);
 
             GameEntity parent = null;
-            if (parentName != "")
+            if (parentName != "" && parentName != null)
             {
-                MatrixFrame frame = currentFrame;
-                frame.Rotate(MBMath.PI, Vec3.Up);
-                parent = GameEntity.Instantiate(base.Scene, "rock_004", frame);
+                parent = GameEntity.Instantiate(base.Scene, "rock_004", currentFrame);
                 parent.Name = parentName;
                 parent.AddTag("path_placer_parent");
                 parent.BreakPrefab();
@@ -103,14 +107,22 @@ namespace SpacePot8tosEditorScripts
             while (!tracker.HasReachedEnd)
             {
                 currentFrame = tracker.CurrentFrame;
-                currentFrame.Rotate(MBMath.PI, Vec3.Up);
+                currentFrame.Rotate(-zRotBias, Vec3.Up);
+                //currentFrame.Rotate(MBMath.PI, Vec3.Up);
                 if (alignToPath)
                 {
+                    //currentFrame.Rotate(-angleOffset, Vec3.Up);
                     float zAngle = Vec2.Side.AngleBetween(forward.AsVec2);
                     currentFrame.rotation.RotateAboutUp(zAngle);
                     float yAngle = -MathF.Sign(Vec3.DotProduct(forward, Vec3.Up)) * Vec3.AngleBetweenTwoVectors(currentFrame.rotation.s, forward);
                     currentFrame.rotation.RotateAboutForward(yAngle);
                     currentFrame.Rotate(rotation.X.ToRadians(), Vec3.Side);
+                    currentFrame.Rotate(rotation.Z.ToRadians(), Vec3.Up);
+                    currentFrame.Rotate(rotation.X.ToRadians(), Vec3.Side);
+                    currentFrame.Rotate(rotation.Y.ToRadians(), Vec3.Forward);
+                    currentFrame.Elevate(offest.Z);
+                    currentFrame.Strafe(offest.x);
+                    currentFrame.Advance(offest.y);
                 }
                 else
                 {
@@ -121,6 +133,13 @@ namespace SpacePot8tosEditorScripts
                     currentFrame.Strafe(offest.x);
                     currentFrame.Advance(offest.y);
                 }
+                currentFrame.Scale(scale);
+
+                if (snapToGround)
+                {
+
+                }
+
                 GameEntity entity = GameEntity.Instantiate(base.Scene, prefabName, currentFrame);
                 if (parent != null)
                 {
