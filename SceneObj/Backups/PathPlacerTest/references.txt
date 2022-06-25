@@ -1,0 +1,13 @@
+12
+mesh empire_garden_wall_a1
+mesh fence_old_c3
+mesh rock_004
+prefab empire_garden_wall_a1
+prefab fence_old_c3
+texture cg_50c_5b
+texture editor_grid_8
+texture editor_grid_8_s
+texture lens_dirt
+texture lens_star
+texture semi_cloudy_2
+texture sun_core2

@@ -2,10 +2,15 @@
 bin/*
 /src/packages/*
 
-**/.vs
+/src/.vs
 /src/SpacePot8tosEditorScripts/Properties/*
 /src/SpacePot8tosEditorScripts/obj/*
+/src/obj/*
 /src/SpacePot8tosEditorScripts/SpacePot8tosEditorScripts.csproj.user
 
 # ignores temporary scene folders
-**/temp_scene_save_folder*
+/SceneObj/temp_scene_save_folder*
+
+# ignore shader caches
+/SceneObj/*/ShaderCache/*
+/SceneObj/Backups/*/ShaderCache/*
