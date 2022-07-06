@@ -1,0 +1,15 @@
+14
+prefab aserai_castle_baracks_a_l3
+texture cg_50c_5b
+texture cliff_soil_d
+texture cliff_soil_h
+texture cliff_soil_n
+texture cliff_soil_s
+texture ground_mud_c_d
+texture ground_mud_c_h
+texture ground_mud_c_n
+texture ground_mud_c_s
+texture lens_dirt
+texture lens_star
+texture semi_cloudy_2
+texture sun_core2

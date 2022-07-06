@@ -1,0 +1,10 @@
+9
+mesh aserai_castle_baracks_a_l2
+prefab aserai_castle_baracks_a_l2
+texture cg_50c_5b
+texture editor_grid_8
+texture editor_grid_8_s
+texture lens_dirt
+texture lens_star
+texture semi_cloudy_2
+texture sun_core2
