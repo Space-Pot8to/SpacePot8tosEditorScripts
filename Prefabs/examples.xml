@@ -1,0 +1,9 @@
+<prefabs>
+	<game_entity name="shrub_b_prefab_sp" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<meta_mesh_component name="shrub_b"/>
+		</components>
+	</game_entity>
+</prefabs>
+

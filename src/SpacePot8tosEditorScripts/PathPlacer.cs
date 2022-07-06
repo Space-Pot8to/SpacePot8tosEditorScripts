@@ -1,4 +1,6 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Linq;
+using TaleWorlds.Core;
 using TaleWorlds.Engine;
 using TaleWorlds.Library;
 using TaleWorlds.MountAndBlade;
@@ -13,6 +15,7 @@ namespace SpacePot8tosEditorScripts
         public float separation;
         public bool snapToGround;
         public bool alignToPath;
+        public bool randomizeZRotation;
         public Vec3 rotation;
         public Vec3 scale = Vec3.One;
         public Vec3 offest;
@@ -37,6 +40,23 @@ namespace SpacePot8tosEditorScripts
             {
                 this._currentParent = null;
                 return;
+            }
+
+            if(variableName == "randomizeZRotation" && CanLiveEdit())
+            {
+                List<GameEntity> children = _currentParent.GetChildren().ToList();
+                foreach (GameEntity entity in children)
+                {
+                    if (randomizeZRotation)
+                    {
+                        //float rand = MBRandom.RandomFloatRanged(MBMath.TwoPI);
+                        System.Random s = new System.Random();
+                        float rand = s.NextFloat() * 100f;
+                        MatrixFrame frame = entity.GetGlobalFrame();
+                        frame.rotation.RotateAboutUp(rand);
+                        entity.SetFrame(ref frame);
+                    }
+                }
             }
 
             if (CanLiveEdit())
@@ -95,6 +115,8 @@ namespace SpacePot8tosEditorScripts
             currentFrame.Rotate(-angleOffset, Vec3.Up);
             currentFrame.Rotate(-zRotBias, Vec3.Up);
 
+            System.Collections.Generic.List<GameEntity> placedEntities = new System.Collections.Generic.List<GameEntity>();
+
             GameEntity parent = null;
             if (parentName != "" && parentName != null)
             {
@@ -137,7 +159,8 @@ namespace SpacePot8tosEditorScripts
 
                 if (snapToGround)
                 {
-
+                    float z = base.Scene.GetGroundHeightAtPosition(currentFrame.origin);
+                    currentFrame.origin.z = z;
                 }
 
                 GameEntity entity = GameEntity.Instantiate(base.Scene, prefabName, currentFrame);
@@ -145,8 +168,10 @@ namespace SpacePot8tosEditorScripts
                 {
                     parent.AddChild(entity, true);
                 }
+                placedEntities.Add(entity);
                 tracker.Advance(separation);
             }
+            
             MBEditor.UpdateSceneTree();
         }
 
