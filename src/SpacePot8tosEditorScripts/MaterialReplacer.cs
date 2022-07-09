@@ -76,24 +76,24 @@ namespace SpacePot8tosEditorScripts
 
         private void SelectTargetEntities()
         {
-            List<GameEntity> allEntities = new List<GameEntity>();
-            base.Scene.GetEntities(ref allEntities);
+            _selectedEntities = new List<GameEntity>();
+            base.Scene.GetEntities(ref _selectedEntities);
             // entities with at least one mesh
             // _selectedEntities = allEntities.Where(x => x.GetComponentCount(GameEntity.ComponentType.MetaMesh) > 0).ToList();
             // filter by tag
             if (tag != "" && tag != null)
             {
-                _selectedEntities = allEntities.Where(x => x.HasTag(tag)).ToList();
+                _selectedEntities = _selectedEntities.Where(x => x.HasTag(tag)).ToList();
             }
             // filter by entity name
             if (entityName != "" && entityName != null)
             {
-                _selectedEntities = allEntities.Where(x => x.Name == entityName).ToList();
+                _selectedEntities = _selectedEntities.Where(x => x.Name == entityName).ToList();
             }
             // filter by script name
             if (scriptName != "" && scriptName != null)
             {
-                _selectedEntities = allEntities.Where(x => x.HasScriptComponent(scriptName)).ToList();
+                _selectedEntities = _selectedEntities.Where(x => x.HasScriptComponent(scriptName)).ToList();
             }
             // search children of selected parents
             if (searchChildren)
